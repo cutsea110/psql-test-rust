@@ -1,0 +1,24 @@
+[package]
+name = "psql1"
+version = "0.1.0"
+authors = ["cutsea110 <cutsea110@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.4.4", features = ["postgres"] }
+dotenv = "0.15.0"
+
+[[bin]]
+name = "show_posts"
+path = "src/bin/show-posts.rs"
+[[bin]]
+name = "write_post"
+path = "src/bin/write-post.rs"
+[[bin]]
+name = "publish_post"
+path = "src/bin/publish-post.rs"
+[[bin]]
+name = "delete_post"
+path = "src/bin/delete-post.rs"
